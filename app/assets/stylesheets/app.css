@@ -1,0 +1,88 @@
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body {
+	background: #fefcea;
+	background: -moz-radial-gradient(center, ellipse cover,  #fefcea 15%, #f2ce6d 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(15%,#fefcea), color-stop(100%,#f2ce6d));
+	background: -webkit-radial-gradient(center, ellipse cover,  #fefcea 15%,#f2ce6d 100%);
+	background: -o-radial-gradient(center, ellipse cover,  #fefcea 15%,#f2ce6d 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  #fefcea 15%,#f2ce6d 100%);
+	background: radial-gradient(ellipse at center,  #fefcea 15%,#f2ce6d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f2ce6d',GradientType=1 );
+}
+header.row {
+	margin-top: 33px;
+}
+.reveal-modal { 
+	top: 33px;
+	background: #000;
+}
+textarea {
+	background: #000000;
+	color: #777777;
+	border: 3px solid #000;
+	padding: 33px;
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+} 
+textarea:focus { 
+	background: #2A211C; 
+	color: #BDAE9D;
+	outline: none !important; 
+	border: 33px solid #000;
+	font: 16px/20px normal 'Courier', Courier, serif;
+}
+h1.title {
+	font-family: 'Droid Serif', serif;
+	display:inline;
+}
+h4.title {
+	display:inline;
+	text-transform: uppercase;
+	float:right;
+}
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+#fullText:-moz-full-screen {
+    background: #000;
+}
+
+#fullText:-webkit-full-screen {
+    background: #000;
+}
+
+#fullText:fullscreen {
+    background: #000;
+}
+#fullText:-webkit-full-screen p{
+	visibility: hidden;
+}
+#fullText:-webkit-full-screen .button-group{
+	opacity:0.4;
+}
+#fullText:-webkit-full-screen .button-group:hover{
+	opacity:0.9;
+}
+#fullText:-webkit-full-screen #title{
+	opacity:0.3;
+}
+#fullText:-webkit-full-screen #title:focus{
+	opacity:0.9;
+}
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
