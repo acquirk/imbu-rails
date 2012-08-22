@@ -3,16 +3,28 @@
    Table of Contents
 -----------------------------------------------------
 :: Imports
+:: Variables
 :: Shared Styles
-:: Page Name 1
+:: FullScreen Styles
 :: Page Name 2
 */
+
+/* -----------------------------------------
+	Imports
+----------------------------------------- */
 
 @import "foundation";
 
 /* -----------------------------------------
-   Shared Styles
+	Variables
 ----------------------------------------- */
+
+$black: #000;
+
+/* -----------------------------------------
+	Shared Styles
+----------------------------------------- */
+
 body {
 	background: #fefcea;
 	background: -moz-radial-gradient(center, ellipse cover,  #fefcea 15%, #f2ce6d 100%);
@@ -28,7 +40,7 @@ header.row {
 }
 .reveal-modal { 
 	top: 33px;
-	background: #000;
+	background: $black;
 }
 textarea {
 	background: #000000;
@@ -36,14 +48,15 @@ textarea {
 	border: 3px solid #000;
 	padding: 33px;
 	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	&:focus { 
+		background: #2A211C; 
+		color: #BDAE9D;
+		outline: none !important; 
+		border: 33px solid #000;
+		font: 16px/20px normal 'Courier', Courier, serif;
+	}
 } 
-textarea:focus { 
-	background: #2A211C; 
-	color: #BDAE9D;
-	outline: none !important; 
-	border: 33px solid #000;
-	font: 16px/20px normal 'Courier', Courier, serif;
-}
+
 h1.title {
 	font-family: 'Droid Serif', serif;
 	display:inline;
@@ -53,8 +66,13 @@ h4.title {
 	text-transform: uppercase;
 	float:right;
 }
+.centered {
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+}
 /* -----------------------------------------
-   Page Name 1
+   FullScreen Styles
 ----------------------------------------- */
 
 #fullText:-moz-full-screen {
